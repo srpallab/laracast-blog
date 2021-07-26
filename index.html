@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <title>Laravel From Strach Blog</title>
+    <title>Laravel From Scratch Blog</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,10 +12,11 @@
   </head>
   <body class="px-6 py-8" style="font-family: 'Open Sans', sans-serif;">
     <section>
+      <!-- Navigation -->
       <nav class="flex justify-between items-center">
 	<div>
 	  <a href="#">
-	    <img alt="" src="assets/images/logo.svg"/ width="165" height="16">
+	    <img alt="Laracast Logo" src="assets/images/logo.svg"/ width="165" height="16">
 	  </a>
 	</div>
 	<div>
@@ -25,8 +26,45 @@
 	  </a>
 	</div>
       </nav>
-      <header>
-	
+      <!-- Header Title Section -->
+      <header class="max-w-4xl mx-auto mt-20 text-center">
+	<div class="max-w-xl mx-auto">
+	  <h1 class="text-4xl">Letest <span class="text-blue-500 ">Laravel From Scratch</span> News</h1>
+	</div>
+	<h2 class="inline-flex mt-2">
+	  By Lary Laracore
+	  <img alt="Head of Laracast mascot" src="assets/images/lary-head.svg"/>
+	</h2>
+	<p class="text-sm mt-20">
+	  Another Year. Another Update. New Blog with new News. I'am
+	  going to keep you guyes up to speed with what's going on.
+	</p>
+	<!-- Drop Down Section -->
+	<div class="space-x-4 mt-2">
+	  <!-- Category Drop Down -->
+	  <span class="bg-gray-100 inline-block rounded-xl">
+	    <select id="category" name="category" class="bg-transparent p-2 text-sm font-semibold">
+	      <option value="category" disabled selected>Category</option>
+	      <option value="laravel8">Laravel 8</option>
+	      <option value="tailwind">Tailwind CSS</option>
+	    </select>
+	  </span>
+	  <!-- Filter Drop Down -->
+	  <span class="bg-gray-100 inline-block rounded-xl">
+	    <select id="category" name="category" class="bg-transparent p-2 text-sm font-semibold">
+	      <option value="category" disabled selected>Other Filters</option>
+	      <option value="laravel8">Laravel 8</option>
+	      <option value="tailwind">Tailwind CSS</option>
+	    </select>
+	  </span>
+	  <!-- Search Form -->
+	  <span class="bg-gray-100 inline-block rounded-xl py-2 pl-4">
+	    <form method="GET" id="search" action="#">
+	      <input class="bg-transparent placeholder-black font-semibold text-sm"
+		     name="search" type="text" placeholder="Find Something"/>
+	    </form>
+	  </span>
+	</div>
       </header>
       <main>
 	
