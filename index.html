@@ -4,12 +4,19 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
     <title>Laravel From Scratch Blog</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
 	  rel="stylesheet">
     <script src="https://kit.fontawesome.com/fc813874b8.js" crossorigin="anonymous"></script>
+    <style type="text/tailwindcss">
+     @layer utilities {
+       .content-auto {
+         content-visibility: auto;
+       }
+     }
+    </style>
   </head>
   <body class="px-6 py-8" style="font-family: 'Open Sans', sans-serif;">
     <section>
